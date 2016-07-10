@@ -4,7 +4,7 @@ public class Employee extends Person {
 
 	private int daySalary;
 
-	public double getDaySalary() {
+	public int getDaySalary() {
 		return daySalary;
 	}
 
@@ -22,7 +22,7 @@ public class Employee extends Person {
 	double calculateOvertime(double hourOvertime) {
 		double overtime = 0;
 		if (this.getAge() >= 18) {
-			overtime = (getDaySalary() / 8) * 1.5;
+			overtime = ((double)getDaySalary() / 8) * 1.5;
 		}
 		return overtime;
 	}

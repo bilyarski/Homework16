@@ -12,6 +12,7 @@ public class Demo {
 		Student katya = new Student("Katya", 24, false, 5.6);
 		Employee stavri = new Employee("Stavri", 36, true, 40);
 		Employee ico = new Employee("Hristo", 40, true, 55);
+		System.out.println(stavri.calculateOvertime(2));
 
 	}
 
