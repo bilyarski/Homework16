@@ -27,12 +27,7 @@ public class Employee extends Person {
 		return overtime;
 	}
 	void showEmployeeInfo(){
-		String gender = "";
-		if (isMale()) {
-			gender = "Male";
-		} else {
-			gender = "Female";
-		}
-		System.out.println("Name: " + getName() + "\nAge: " + getAge() + "\nGender: " + gender + "\nDay salary: " + getDaySalary() );
+		super.showPersonInfo();
+		System.out.println("Day salary: " + getDaySalary());
 	}
 }

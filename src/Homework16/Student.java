@@ -20,14 +20,8 @@ public class Student extends Person {
 	}
 
 	void showStudentInfo() {
-		String gender = "";
-		if (isMale()) {
-			gender = "Male";
-		} else {
-			gender = "Female";
-		}
-		System.out.println("Name: " + getName() + "\nAge: " + getAge() + "\nGender: " + gender + "\nScore: " + getScore());
-
+		super.showPersonInfo();
+		System.out.println("Score: " + getScore());
 	}
 
 }
