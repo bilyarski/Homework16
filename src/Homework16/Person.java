@@ -46,6 +46,6 @@ public class Person {
 		} else {
 			gender = "Female";
 		}
-		System.out.println("Name: " + getName() + "\nAge: " + getName() + "\nGender: " + gender);
+		System.out.println("Name: " + getName() + "\nAge: " + getAge() + "\nGender: " + gender);
 	}
 }

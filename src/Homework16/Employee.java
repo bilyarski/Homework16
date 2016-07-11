@@ -22,11 +22,12 @@ public class Employee extends Person {
 	double calculateOvertime(double hourOvertime) {
 		double overtime = 0;
 		if (this.getAge() >= 18) {
-			overtime = ((double)getDaySalary() / 8) * 1.5;
+			overtime = ((double) getDaySalary() / 8) * 1.5;
 		}
 		return overtime;
 	}
-	void showEmployeeInfo(){
+
+	void showEmployeeInfo() {
 		super.showPersonInfo();
 		System.out.println("Day salary: " + getDaySalary());
 	}
